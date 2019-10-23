@@ -47,6 +47,16 @@ body {
     margin-top: 100px;
 }
 
+/* Navbar JS Effect */
+.navbar {
+    background: transparent;
+    transition: background 600ms;
+}
+.navbar.scrolled {
+    background: rgba(222, 192, 222, .85);
+    transition: background 600ms;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
     #headingGroup h1 {
