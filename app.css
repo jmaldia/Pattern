@@ -1,6 +1,9 @@
 body {
-    background: #f5d9d5;
     font-family: "Nunito", san-serif;
+}
+
+#bodyCandy {
+    background: #f5d9d5;
 }
 
 #mainNavbar {
@@ -46,6 +49,18 @@ body {
 .content {
     margin-top: 100px;
 }
+
+/* MAIN */
+    #header {
+        background: url("imgs/header.jpeg") center center / cover no-repeat;
+
+    }
+
+/* JS */
+#bodyJS {
+    background: #cecece;
+}
+
 
 /* Navbar JS Effect */
 .navbar {
