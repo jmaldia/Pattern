@@ -2,10 +2,6 @@ body {
     font-family: "Nunito", san-serif;
 }
 
-#bodyCandy {
-    background: #f5d9d5;
-}
-
 #mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;
@@ -51,16 +47,25 @@ body {
 }
 
 /* MAIN */
-    #header {
-        background: url("imgs/header.jpeg") center center / cover no-repeat;
+#header {
+    background: url("imgs/header.jpeg") center center / cover no-repeat;
+}
 
-    }
+/* MUSEUM OF CANDY */
+#bodyCandy {
+    background: #f5d9d5;
+}
 
 /* JS */
 #bodyJS {
     background: #cecece;
 }
 
+.big {
+    font-size: 2rem;
+    color: orangered;
+    border: 5px solid red;
+}
 
 /* Navbar JS Effect */
 .navbar {
