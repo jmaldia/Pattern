@@ -20,9 +20,15 @@ $(function(){
 
 
 let firstLi = document.getElementsByTagName("p")[0];
-
+console.log(firstLi)
 firstLi.addEventListener("click", function() {
     firstLi.classList.toggle('big');
-    // firstLi.textContent = "I was clicked."
     firstLi.innerHTML = "I Was Clicked"
+});
+
+let dogImage = document.getElementById("dogImage");
+
+// Change attribute
+dogImage.addEventListener("click", function(){
+    dogImage.setAttribute("src", "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg")
 });
