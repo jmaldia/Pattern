@@ -22,13 +22,22 @@ $(function(){
 let firstLi = document.getElementsByTagName("p")[0];
 console.log(firstLi)
 firstLi.addEventListener("click", function() {
-    firstLi.classList.toggle('big');
-    firstLi.innerHTML = "I Was Clicked"
+    if (this.innerHTML === "Click Me") {
+        firstLi.classList.toggle('big');
+        firstLi.innerHTML = "Click Me Back"
+    } else {
+        firstLi.classList.toggle('big');
+        firstLi.innerHTML = "Click Me"
+    }
 });
 
 let dogImage = document.getElementById("dogImage");
 
 // Change attribute
 dogImage.addEventListener("click", function(){
-    dogImage.setAttribute("src", "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg")
+    if (this.src.indexOf("Diarrhea") != -1) {
+        dogImage.setAttribute("src", "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg")
+    } else {
+        dogImage.setAttribute("src", "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg")
+    }
 });

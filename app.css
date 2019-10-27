@@ -67,6 +67,11 @@ body {
     border: 5px solid red;
 }
 
+#dogImage {
+    height: 300px;
+    margin: 40px 0;
+}
+
 /* Navbar JS Effect */
 .navbar {
     background: transparent;
