@@ -42,3 +42,46 @@ dogImage.addEventListener("click", function(){
         dogImage.setAttribute("src", "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg")
     }
 });
+
+// Score Keeper
+let pOneScore = document.getElementById("p1Score");
+let pTwoScore = document.getElementById("p2Score");
+let pOneButton = document.getElementById("p1Button");
+let pTwoButton = document.getElementById("p2Button");
+let scoreOne = 0;
+let scoreTwo = 0;
+let winningScore = 5
+
+
+pOneButton.addEventListener("click", function() {
+    scoreOne++;
+    pOneScore.textContent = scoreOne;
+    
+    if (scoreOne === winningScore) {
+        setTimeout(() => {
+            alert('Player 1 won. Play again.');
+        }, 70);
+        reset();
+    }
+});
+
+pTwoButton.addEventListener("click", function() {
+    scoreTwo++;
+    pTwoScore.textContent = scoreTwo;
+
+    if (scoreTwo === winningScore) {
+        setTimeout(() => {
+            alert('Player 2 won. Play again.')
+        }, 70);
+        reset();
+    }
+});
+
+let reset = () => {  
+    setTimeout(() => {
+        scoreOne = 0;
+        scoreTwo = 0;
+        pOneScore.textContent = 0;
+        pTwoScore.textContent = 0;
+    }, 100);
+}
