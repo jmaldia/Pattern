@@ -20,14 +20,15 @@ $(function(){
 
 
 let firstLi = document.getElementsByTagName("p")[0];
-console.log(firstLi)
-firstLi.addEventListener("click", function() {
-    if (this.innerHTML === "Click Me") {
+let firstButton = document.getElementById("firstButton");
+
+firstButton.addEventListener("click", function() {
+    if (this.innerHTML === "Original Text") {
         firstLi.classList.toggle('big');
-        firstLi.innerHTML = "Click Me Back"
+        firstLi.innerHTML = "Text after Clicking"
     } else {
         firstLi.classList.toggle('big');
-        firstLi.innerHTML = "Click Me"
+        firstLi.innerHTML = "Original Text"
     }
 });
 
